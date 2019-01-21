@@ -5,7 +5,7 @@ The project is implemented in Perl.  It's assumed that Perl is installed at /usr
 
 ## Assumption
 
-It's assumed that the sliding window is	small than the total expand of the input data set, in other words, the input file should contains enough hours to cover one sliding window.  For example, the following example is considered invalid input, and the code will exit while printing a message.
+It's assumed that the sliding window is	small than the total expand of the input data set, in other words, the input file should contains enough hours to cover one sliding window.  For example, the following example is considered invalid input, and the code will exit and print a message.
 
 sliding window: 4
 all hours found in the input data set: 1, 2, 3
@@ -17,7 +17,7 @@ all hours found in the input data set: 1, 2, 3
 
 2) Calculate the following 2 items for each hour, and store them in a hash:
 a. the total error
-b. the number of valid entries for each hour.  Those entries with both actual and predicted prices are considered valid.
+b. the number of valid entries.  Those entries with both actual and predicted prices are considered valid.
 
 
 3) For the first sliding window, sum up the errors in all hours, divided by the number of valid entries.
