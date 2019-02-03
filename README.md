@@ -1,9 +1,6 @@
-## Programming language
-
-The project is implemented in Perl.  It's assumed that Perl is installed at /usr/bin/perl .
-
-
 ## Assumption
+
+It's assumed that Perl is installed at /usr/bin/perl.
 
 It's assumed that the sliding window is	small than the total expand of the input data set, in other words, the input file should contains enough hours to cover one sliding window.  For example, the following example is considered invalid input, and the code will exit and print a message.
 
